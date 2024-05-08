@@ -49,7 +49,18 @@ function testRequest(){
         }
     });
 }
+const toggleBtn = document.getElementById('toggleBtn');
+const captureForm = document.getElementById('show-hide');
 
+toggleBtn.addEventListener('click', function() {
+  if (captureForm.style.display === 'none') {
+    captureForm.style.display = 'block';
+    toggleBtn.textContent = 'Hide Form';
+  } else {
+    captureForm.style.display = 'none';
+    toggleBtn.textContent = 'Show Form';
+  }
+});
 function init() {
 
     //load data
@@ -59,4 +70,4 @@ function init() {
 }
 
 window.onload = init; //avoid the init()
-//hello1
+//hello
