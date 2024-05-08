@@ -1,0 +1,70 @@
+body {
+    background-color: #F3E8EE;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .task{
+    border: 2px solid #333;
+    margin: 10px 20px;
+  }
+  
+  h1 {
+    color: #ffffff;
+    background-color: #2E2C2F;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Pacifico', cursive;
+    cursor: pointer; /* Add cursor pointer */
+  }
+  
+  h1.collapsed {
+    padding: 10px; /* Reduced padding when collapsed */
+  }
+  
+  main {
+    display: flex;
+    height: 100vh;
+  }
+  
+  #list {
+    background-color: #475b63;
+    flex: 2;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #form {
+    background-color: #BACDB0;
+    flex: 2;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #list li {
+    list-style-type: square;
+    color: #2c7873;
+    margin-bottom: 10px;
+  }
+  
+  #form input,
+  #form textarea {
+    border: 2px solid #ffc072;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  #form button {
+    background-color: #ffc072;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 768px){
+    main{
+        flex-direction: column;
+    }
+    #list,#form{
+        flex: 1;
+    }
+  }
